@@ -21,7 +21,7 @@
 			android:scaleType="centerCrop"
 			android:layout_gravity="center"
 			android:layout_alignParentRight="true"
-			android:src="@mipmap/about_pic"/>
+			android:src="@mipmap/about_pic2"/>
 
 		<LinearLayout
 			android:id="@+id/aboutBar"
@@ -40,7 +40,7 @@
 				android:layout_marginRight="@dimen/left_right_margin"
 				android:layout_gravity="center"
 				android:layout_weight="0.62"
-				android:text="@string/about_dev"
+				android:text="@string/about_dev2"
 				android:textColor="@color/white"
 				android:textSize="@dimen/list_title_text"/>
 
@@ -64,7 +64,7 @@
 					android:layout_height="@dimen/about_icons"
 					android:layout_marginRight="@dimen/icon_margin"
 					android:background="@drawable/about_googleplus"/>
-
+				
 				<ImageButton
 					android:id="@+id/twitter_button"
 					android:layout_width="@dimen/about_icons"
@@ -107,7 +107,7 @@
 				android:layout_marginRight="@dimen/left_right_margin"
 				android:layout_marginTop="@dimen/about_top_title_margin"
 				android:layout_marginBottom="@dimen/left_right_margin"
-				android:text="@string/dev_name"
+				android:text="@string/dev_name2"
 				android:textSize="@dimen/list_title_text"
 				android:textColor="@color/text_title"/>
 
@@ -126,7 +126,7 @@
 				android:layout_marginRight="@dimen/left_right_margin"
 				android:layout_marginTop="@dimen/about_top_desc_margin"
 				android:layout_marginBottom="@dimen/list_padding"
-				android:text="@string/dev_description"
+				android:text="@string/dev_description2"
 				android:textSize="@dimen/list_desc_text"
 				android:textColor="#FFFFFF"/>
 
@@ -138,7 +138,7 @@
 				android:layout_marginRight="@dimen/left_right_margin"
 				android:layout_marginTop="@dimen/about_top_title_margin"
 				android:layout_marginBottom="@dimen/left_right_margin"
-				android:text="@string/dev_bio_title"
+				android:text="@string/dev_bio_title2"
 				android:textSize="@dimen/list_title_text"
 				android:textColor="@color/text_title"/>
 
@@ -157,7 +157,7 @@
 				android:layout_marginRight="@dimen/left_right_margin"
 				android:layout_marginTop="@dimen/about_top_desc_margin"
 				android:layout_marginBottom="@dimen/list_padding"
-				android:text="@string/dev_bio"
+				android:text="@string/dev_bio2"
 				android:textSize="@dimen/list_desc_text"
 				android:textColor="#FFFFFF"/>
 

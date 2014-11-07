@@ -31,8 +31,8 @@
 	        android:actionProviderClass="com.actionbarsherlock.widget.ShareActionProvider"
 	        android:showAsAction="never"
 	        android:title="@string/rateme"/>
-	
-	    <item
+		
+		<item
 	        android:id="@+id/emailButton"
 	        android:actionProviderClass="com.actionbarsherlock.widget.ShareActionProvider"
 	        android:showAsAction="never"
@@ -42,8 +42,15 @@
 	        android:id="@+id/aboutButton"
 	        android:actionProviderClass="com.actionbarsherlock.widget.ShareActionProvider"
 	        android:showAsAction="never"
-	        android:title="@string/about_dev"/>
-	
+	        android:title="@string/about_dev"/>		
+		
+		<item
+	        android:id="@+id/aboutButton2"
+	        android:actionProviderClass="com.actionbarsherlock.widget.ShareActionProvider"
+	        android:showAsAction="never"
+	        android:title="@string/about_dev2"/>
+		
+		
 	    <item
 	        android:id="@+id/gplusButton"
 	        android:actionProviderClass="com.actionbarsherlock.widget.ShareActionProvider"

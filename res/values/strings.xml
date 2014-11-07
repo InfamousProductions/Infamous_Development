@@ -55,4 +55,6 @@
     <!-- menu items -->
     <string name="menu_show_drawer_icon">Show in app drawer</string>
 		
+	<!-- ads -->
+	<string name="banner_ad_unit_id">ca-app-pub-1365616957524122/9531393493</string>
 </resources>

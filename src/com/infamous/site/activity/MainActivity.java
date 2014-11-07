@@ -1,5 +1,5 @@
 /*
- * Copyright 2014 Jamison904
+ * Copyright 2013 the1dynasty
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,6 +22,7 @@ import com.infamous.site.R;
 import com.infamous.site.fragment.MainFragment;
 import com.infamous.site.util.GlassActionBarHelper;
 import com.infamous.site.util.Utils;
+import com.infamous.site.*;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
@@ -45,6 +46,7 @@ import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
+import com.google.android.gms.ads.*;
 
 
 /** 
@@ -57,6 +59,7 @@ public class MainActivity extends SherlockFragmentActivity {
 	
 	private SharedPreferences prefs;
 	private GlassActionBarHelper helper;
+	private static final String TEST_DEVICE_ID = "35BB11D3F347DFA2";
 
 	boolean doubleBackToExitPressedOnce = false;
 	
@@ -77,6 +80,14 @@ public class MainActivity extends SherlockFragmentActivity {
 		getSupportFragmentManager().beginTransaction()
 		.replace(R.id.container, new MainFragment())
 		.commit();
+		
+		// The "loadAdOnCreate" and "testDevices" XML attributes no longer available.
+		AdView adView = (AdView) this.findViewById(R.id.adView);
+		AdRequest adRequest = new AdRequest.Builder()
+			.addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+			.addTestDevice(TEST_DEVICE_ID)
+			.build();
+		adView.loadAd(adRequest);
 	}
 
 	/************************************************************************
@@ -163,6 +174,10 @@ public class MainActivity extends SherlockFragmentActivity {
             case R.id.aboutButton:
 				Intent about = new Intent(MainActivity.this, AboutDev.class);
 				startActivity(about);
+                break;
+			case R.id.aboutButton2:
+				Intent about2 = new Intent(MainActivity.this, AboutDev2.class);
+				startActivity(about2);
                 break;
             case R.id.gplusButton:
 				Intent gpCommunity = new Intent(Intent.ACTION_VIEW).setData(Uri.parse

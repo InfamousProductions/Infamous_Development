@@ -18,6 +18,7 @@
 
 <!-- Remove LinearLayout and include layout to revert back to the main page w/o the banner -->
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:ads="http://schemas.android.com/apk/res-auto"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:orientation="vertical"
@@ -39,6 +40,15 @@
 		android:padding="@dimen/list_padding"
 	    android:layout_gravity="center"
 	    android:id="@+id/container" />
+	
+	<!--ads:adUnitId sets the ad unit ID, which is defined in values/strings.xml -->
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
 
 </LinearLayout>
 </ScrollView>

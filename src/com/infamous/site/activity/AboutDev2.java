@@ -14,7 +14,7 @@ import android.widget.TextView;
 import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Window;
 
-public class AboutDev extends SherlockActivity {
+public class AboutDev2 extends SherlockActivity {
 
 	private ImageButton
     twitter,
@@ -27,7 +27,7 @@ public class AboutDev extends SherlockActivity {
 	  public void onCreate(Bundle savedInstanceState) {
 	  super.onCreate(savedInstanceState);
 	  noTitle();
-	  setContentView(R.layout.about_dev);  
+	  setContentView(R.layout.about_dev2);  
       
       Typeface font1 = Typeface.createFromAsset(getAssets(), "RobotoSlab-Regular.ttf");
       TextView txt1 = (TextView) findViewById(R.id.devFont);
@@ -41,11 +41,11 @@ public class AboutDev extends SherlockActivity {
       TextView desc2 = (TextView) findViewById(R.id.description2);
       desc2.setTypeface(font1); 
 	  
-	  paypal = (ImageButton) findViewById(R.id.paypal_button);
-	  paypal.setOnClickListener(new OnClickListener() {
+		  paypal = (ImageButton) findViewById(R.id.paypal_button);
+		  paypal.setOnClickListener(new OnClickListener() {
 				  public void onClick(View v) {
 					  try {
-						  final Intent intent = new Intent(Intent.ACTION_VIEW).setData(Uri.parse("http://goo.gl/Gw2Lf9"));
+						  final Intent intent = new Intent(Intent.ACTION_VIEW).setData(Uri.parse("http://forum.xda-developers.com/donatetome.php?u=5001866"));
 						  startActivity(intent);
 					  } 
 					  catch (RuntimeException gp) {
@@ -58,7 +58,7 @@ public class AboutDev extends SherlockActivity {
       gplus.setOnClickListener(new OnClickListener() {
               public void onClick(View v) {
               	try {
-              		final Intent intent = new Intent(Intent.ACTION_VIEW).setData(Uri.parse("https://plus.google.com/u/0/+JamesJamison"));
+              		final Intent intent = new Intent(Intent.ACTION_VIEW).setData(Uri.parse("https://plus.google.com/100479151774861861539"));
               		startActivity(intent);
               	} 
               	catch (RuntimeException gp) {
@@ -71,7 +71,7 @@ public class AboutDev extends SherlockActivity {
       twitter.setOnClickListener(new OnClickListener() {
               public void onClick(View v) {
               	try {
-              		final Intent intent = new Intent(Intent.ACTION_VIEW).setData(Uri.parse("http://twitter.com/jamison904"));
+              		final Intent intent = new Intent(Intent.ACTION_VIEW).setData(Uri.parse("http://twitter.com/mrimp305"));
               		startActivity(intent);
               	} 
               	catch (RuntimeException tw) {
@@ -84,7 +84,7 @@ public class AboutDev extends SherlockActivity {
       github.setOnClickListener(new OnClickListener() {
               public void onClick(View v) {
               	try {
-              		final Intent intent = new Intent(Intent.ACTION_VIEW).setData(Uri.parse("https://www.github.com/jamison904"));
+              		final Intent intent = new Intent(Intent.ACTION_VIEW).setData(Uri.parse("https://www.github.com/mrimp"));
               		startActivity(intent);
               	} 
               	catch (RuntimeException tw) {

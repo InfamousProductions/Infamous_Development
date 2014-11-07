@@ -22,9 +22,9 @@
 	<string name="changelog_title">Changelog</string>
 	
 		<!-- Version Number: Add more or remove some -->
-	<string name="changelog_1">Version 1.0</string>
-	<string name="changelog_2">Version 4.6</string>
-	<string name="changelog_3">Version 4.6.1</string>
+	<string name="changelog_1">Version 1.0 - 1.2</string>
+	<string name="changelog_2">Version 1.5</string>
+	<string name="changelog_3">Version 1.6</string>
 	<string name="changelog_4">Version 4.7</string>
 	<string name="changelog_5">Version 4.7.5</string>
 	<string name="changelog_6">Version 2.1.2</string>
@@ -48,26 +48,17 @@
 			\n&#8226; Moar!</string>
 	<!-- Changelog 2 -->
 		<string name="cl_list_2">
-		    &#8226; Added option to hide app from app drawer.
-			\n&#8226; WARNING! Once you hide app from drawer you have to open the app from the playStore or app manager.
-			\n&#8226; Fixed a lot of references for various layouts and colors
-			\n&#8226; Added playstore
-			\n&#8226; Added email app
-			\n&#8226; Reworked news and weather
-			\n&#8226; Added LockClock
-			\n&#8226; Added DSPmanager
-			\n&#8226; Added Google Ears (sounds search)
-			\n&#8226; Added Allcast
-			\n&#8226; Added new wallpapers
-			\n&#8226; Added new features
-			\n&#8226; added a few launchers
+		    &#8226; Added more Infamous!
+			\n&#8226; Added Mrimp 
+			\n&#8226; Gearing up for Infamous Note 4 release!
+			\n&#8226; Added shameless donate to me links
 			\n&#8226; Other Misc things
 		</string>
 	
 	<!-- Changelog 3 -->						
 		<string name="cl_list_3">
-		    &#8226; Removed PlayStore until I debug layouts to fix FC
-			\n&#8226; Added some new images because I was working when I found out 
+		    &#8226; Added ads for a free way to support team Infamous! This way our server cost goes away and our stuff never does again!
+			\n&#8226; Any requests? Wallpaper suggestions? This is for you guys so let me know!
 		</string>
 	
 	<!-- Changelog 4 -->						

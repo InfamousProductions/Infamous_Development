@@ -38,7 +38,21 @@
 	<string name="dev_bio">James Jamison is the departmental operations analyst at First Coast Service Options, Inc. A Medicare Administrative Contractor (MAC).
 		\n\n At night he is an Android developer. Projects range from custom firmwares, kernels, and applications that are currently on the Google PlayStore.</string>
 	
-	<string name="share_text">"Check out this awesome theme. https://play.google.com/store/apps/details?id=com.infamous.cm.theme</string>
-	<string name="email_subject">Infamous theme request</string>
+	<string name="share_text">"Check out this awesome app. https://play.google.com/store/apps/details?id=com.infamous.site</string>
+	<string name="email_subject">Infamous Development app</string>
+	
+	<!-- dev Bill -->
+	<string name="developer_name2">mrimp</string>
+	<string name="dev_name2">DEV NAME - mrimp</string>
+	<string name="dev_bio_title2">MORE ABOUT mrimp</string>
+	<string name="dev_email2">mrimp@day-off.net</string>
+	<string name="dev_description2">App, ROM, and Kernel developer</string>
+
+	<string name="dev_bio2">I\'m an old fart that started hacking back in the early 80\'s. 
+		\n\n By day I\'m a General Superintendent for a General Contractor in Miami building multi-million dollar Hi-Rises. 
+		\n\n By night an android developer and a Harley enthusiast. Both the Wife and I have Harley\'s and ride almost every Sunday. 
+		\n\n Funny as I remember when the Internet was text base and only accessible from a University, crazy that it\'s changed so much! 
+		\n\n If it\'s hackable I\'ll hack it! Software, Hardware whatever I just LOVE it!</string>
+	
 	
 </resources>
