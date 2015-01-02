@@ -42,6 +42,7 @@ public class MainFragment extends SherlockFragment{
 	public static final int BLACK = 4;
 	public static final int STORE = 5;
 	public static final int DONATE = 6;
+	public static final int ICONS = 7;
 	
 
 	// This is the background layout that gets inflated behind the list view
@@ -89,6 +90,8 @@ public class MainFragment extends SherlockFragment{
 					getResources().getString (R.string.desc_store), 5));
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_donate), 
 					getResources().getString (R.string.desc_donate), 6));
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_icons), 
+					getResources().getString (R.string.desc_icons), 7));
 			
 			
 		} else {
@@ -107,6 +110,9 @@ public class MainFragment extends SherlockFragment{
 					getResources().getString (R.string.desc_store), 5));
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_donate), 
 					getResources().getString (R.string.desc_donate), 6));
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_icons), 
+					getResources().getString (R.string.desc_icons), 7));
+			
 			
 			
 		}
@@ -146,7 +152,7 @@ public class MainFragment extends SherlockFragment{
 			        	break;
 					case BLACK:
 						Intent black = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
-						("http://infamousdevelopment.com/social/"));
+						("http://infamousgit.com"));
 						startActivity(black);
 						break;
 					case STORE:
@@ -158,6 +164,10 @@ public class MainFragment extends SherlockFragment{
 						Intent donate = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
 						("http://goo.gl/Gw2Lf9"));
 						startActivity(donate);
+						break;
+					case ICONS:
+						Intent launcher2 = new Intent(getSherlockActivity(), ApplyLauncherMain.class);
+						startActivity(launcher2);
 						break;
 					
 						}	
@@ -183,7 +193,7 @@ public class MainFragment extends SherlockFragment{
 		        		break;
 					case BLACK:
 						Intent black = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
-						("http://infamousdevelopment.com/social/"));
+						("http://infamousgit.com"));
 						startActivity(black);
 						break;
 					case STORE:
@@ -195,6 +205,10 @@ public class MainFragment extends SherlockFragment{
 						Intent donate = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
 						("http://goo.gl/Gw2Lf9"));
 						startActivity(donate);
+						break;
+					case ICONS:
+						Intent launcher2 = new Intent(getSherlockActivity(), ApplyLauncherMain.class);
+						startActivity(launcher2);
 						break;
 					
 		        		

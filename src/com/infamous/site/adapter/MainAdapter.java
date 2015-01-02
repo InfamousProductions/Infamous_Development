@@ -12,6 +12,7 @@ import android.widget.TextView;
 import java.util.List;
 
 import com.infamous.site.R;
+import com.infamous.site.activity.*;
 
 
 public class MainAdapter extends BaseAdapter{
@@ -23,6 +24,7 @@ public class MainAdapter extends BaseAdapter{
 	public static final int BLACK = 4;
 	public static final int STORE = 5;
 	public static final int DONATE = 6;
+	public static final int ICONS = 7;
 	
 	
 	private Context context;
@@ -110,6 +112,11 @@ public class MainAdapter extends BaseAdapter{
 				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
 				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
 				holder.icon_Image.setImageResource(R.drawable.icon_paypal);
+				break;
+			case ICONS:
+				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
+				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
+				holder.icon_Image.setImageResource(R.drawable.icon_icons);
 				break;
 			
 			}

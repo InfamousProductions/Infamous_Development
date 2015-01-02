@@ -13,6 +13,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.ViewFlipper;
+import com.google.android.gms.ads.*;
 
 import com.actionbarsherlock.app.SherlockActivity;
 
@@ -20,7 +21,7 @@ public class AboutThemeActivity extends SherlockActivity {
 	
 	
 	private ImageButton previous, next;
-	
+	private static final String TEST_DEVICE_ID = "35BB11D3F347DFA2";
 	private ViewFlipper page;
 
 	   Animation animUpLeft;
@@ -32,6 +33,14 @@ public class AboutThemeActivity extends SherlockActivity {
 	  public void onCreate(Bundle savedInstanceState) {
 	  super.onCreate(savedInstanceState);
 	  setContentView(R.layout.theme_fragment);
+	  
+		  // The "loadAdOnCreate" and "testDevices" XML attributes no longer available.
+		  AdView adView = (AdView) this.findViewById(R.id.adView);
+		  AdRequest adRequest = new AdRequest.Builder()
+			  .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+			  .addTestDevice(TEST_DEVICE_ID)
+			  .build();
+		  adView.loadAd(adRequest);
 	  
       Typeface font1 = Typeface.createFromAsset(getAssets(), "RobotoSlab-Regular.ttf");
       TextView desc1 = (TextView) findViewById(R.id.description1);

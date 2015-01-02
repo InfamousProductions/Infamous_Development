@@ -84,7 +84,9 @@
 	<string name="title_community">G+ Community</string>
 	<string name="title_gplus">My Google+</string>
 	<string name="title_request">Infamous Blog</string>
-	<string name="title_black">Infamous Social</string>
+	<string name="title_black">Infamous Productions</string>
+	<string name="title_icons">Apply Icons</string>
+	
 	
 		<!-- OverFlow Menu -->
 	<string name="title_rate">Rate</string>
@@ -93,7 +95,7 @@
 	<string name="title_about">About Developer</string>
 	<string name="title_donate">Donate</string>
 	<string name="more_overflow">More</string>
-	<string name="title_store">More Apps</string>
+	<string name="title_store">Google Playstore</string>
 	<string name="submit">Submit</string>
 	
 		<!-- Labels for app icons -->
@@ -138,7 +140,9 @@
 	<string name="desc_community">Join our Google+ Community to find and share your themes!</string>
 	<string name="desc_gplus">Circle me on Google+</string>
   	<string name="desc_request">Get the latest tech news as well as Infamous news.</string>
-	<string name="desc_black">Infamous Android Social webpage to meet and share with other Android lovers.</string>
+	<string name="desc_black">Our application support site. It even has a forum. Check it out!</string>
+	<string name="desc_icons">Apply our icons for most high end 3rd party launchers!</string>
+	
 	
   		<!-- App Check Stuff -->
 	<string name="alert_start_title">You Are AWESOME!!!</string>

@@ -19,8 +19,8 @@
 <manifest 
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	package="com.infamous.site"
-	android:versionCode="7"
-	android:versionName="1.6"
+	android:versionCode="8"
+	android:versionName="1.7"
 	android:installLocation="auto">
     <!-- android:installLocation is set to "auto" 
     change to "internalOnly" if you want it installed to the internal memory -->
@@ -122,6 +122,90 @@
                   <action android:name="android.intent.action.SET_WALLPAPER" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-        </activity>       
+        </activity> 
+		
+		<activity
+            android:name="com.infamous.site.activity.Docks"
+            android:label="@string/app_name"
+            android:icon="@drawable/icon">
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity> 
+
+        <!-- This is where the magic happens for the Icon Picker and allowing the packs to show up -->
+        <activity
+			android:name="com.infamous.site.activity.Icons"
+			android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="org.adw.launcher.THEMES" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.adw.launcher.icons.ACTION_PICK_ICON" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.anddoes.launcher.THEME" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.teslacoilsw.launcher.THEME" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.fede.launcher.THEME_ICONPACK" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.tsf.shell.themes" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="ginlemon.smartlauncher.THEMES" />
+                <action android:name="ginlemon.smartlauncher.BUBBLESTYLE" />
+                <action android:name="ginlemon.smartlauncher.BUBBLEICONS" />
+                <action android:name="ginlemon.smartlauncher.CLOCKS" />
+                <action android:name="ginlemon.smartlauncher.CLOCKFONTS" />
+                <category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="org.adw.launcher.THEMES" />
+                <action android:name="mobi.bbase.ahome.THEME" />
+                <action android:name="com.rogro.GDE.THEME.1" />
+                <action android:name="com.android.dxtop.launcher.THEME" />
+                <category android:name="com.fede.launcher.THEME_ICONPACK" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.adw.launcher.icons.ACTION_PICK_ICON" />
+                <action android:name="mobi.bbase.ahome.THEME" />
+                <action android:name="com.rogro.GDE.THEME.1" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="cdproductions.crazyicons.TWO" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>                  
+                <action android:name="com.daeva112.manager.MAIN" />                  
+                <category android:name="com.daeva112.manager.THEME" /> 
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.gau.go.launcherex.theme" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+		</activity>
+
+		<!-- android:authorities NEEDS to be changed manually for each new pack
+    	Failure to change name, will result in installation errors -->    
+        <provider 
+            android:name="com.infamous.site.activity.DocksProvider"
+            android:authorities="com.infamous.site.DocksProvider" />
+		
     </application>
 </manifest>

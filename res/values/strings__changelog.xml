@@ -25,7 +25,7 @@
 	<string name="changelog_1">Version 1.0 - 1.2</string>
 	<string name="changelog_2">Version 1.5</string>
 	<string name="changelog_3">Version 1.6</string>
-	<string name="changelog_4">Version 4.7</string>
+	<string name="changelog_4">Version 1.7</string>
 	<string name="changelog_5">Version 4.7.5</string>
 	<string name="changelog_6">Version 2.1.2</string>
 	<string name="changelog_7">Version 2.2.0</string>
@@ -63,14 +63,12 @@
 	
 	<!-- Changelog 4 -->						
 		<string name="cl_list_4">
-		    &#8226; Added connection to theme engine to apply theme from eithin the theme
-			\n&#8226; New UI (again...)
+		    &#8226; Added icons! Credit to my bro JRHO 78 
+			\n&#8226; These are going into my CM themes as well
+			\n&#8226; You can apply them right from the app
+			\n&#8226; Removed some links and added new
 			\n&#8226; More Infamous
-			\n&#8226; Added a bunch of requested wallpapers!
-			\n&#8226; Working on app theme requests now
-			\n&#8226; Fixed some bugs
-			\n&#8226; If Playstore still FC, let me know. Also a log would be amazing!
-			\n&#8226; Fixed scaling on top banner across all screen sizes
+			\n&#8226; Requests? - Jamison			
 		</string>
 	
 	<!-- Changelog 5 -->						
