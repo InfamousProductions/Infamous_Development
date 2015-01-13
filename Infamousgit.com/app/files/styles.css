@@ -1,0 +1,191 @@
+/* ===============================
+   DEFAULT THEME
+   =============================== */
+img {
+  max-width: 100%;
+}
+body.default {
+  font-family: 'roboto', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 100;
+  background: url('http://carp.io/img/default/bg.png');
+  background-repeat: repeat;
+}
+body.default .top {
+  padding: 20px 0 0;
+}
+@media (min-width: 992px) {
+  body.default .top {
+    padding: 50px 0 0;
+  }
+}
+body.default .name {
+  margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+  body.default .name {
+    margin-top: 50px;
+  }
+}
+body.default .name h1 {
+  font-weight: 800;
+  font-size: 30px;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  body.default .name h1 {
+    font-size: 40px;
+    line-height: 2;
+    text-align: left;
+  }
+}
+body.default .name .app-icon {
+  display: block;
+  margin: auto;
+  max-width: 30%;
+}
+@media (min-width: 992px) {
+  body.default .name .app-icon {
+    height: 70px;
+    width: 70px;
+    margin-right: 20px;
+    float: left;
+  }
+}
+body.default .name .app-logo {
+  text-align: center;
+  max-width: 80%;
+  margin: auto;
+}
+@media (min-width: 992px) {
+  body.default .name .app-logo {
+    margin: -60px auto 0;
+  }
+}
+body.default .pitch {
+  text-align: center;
+}
+@media (min-width: 992px) {
+  body.default .pitch {
+    text-align: left;
+  }
+}
+body.default .pitch .lead {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+body.default .features {
+  padding-left: 0px;
+  margin-top: 30px;
+  text-align: left;
+}
+body.default .features li {
+  list-style: none;
+  line-height: 24px;
+  margin-left: 22px;
+  margin-bottom: 6px;
+}
+body.default .features li:before {
+  content: "\f00c";
+  font-family: "FontAwesome";
+  position: absolute;
+  margin-left: -22px;
+}
+body.default .download {
+  padding-left: 0px;
+  margin-top: 40px;
+}
+body.default .download li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 10px;
+  height: 60px;
+}
+body.default .download li img {
+  height: 100%;
+  width: auto;
+}
+body.default .iphone-mockup {
+  width: 300px;
+  position: relative;
+  margin: auto;
+  margin-bottom: 20px;
+}
+body.default .iphone-mockup .glare {
+  width: 117px;
+  position: absolute;
+  top: 86px;
+  right: 39px;
+}
+body.default .iphone-mockup .screen {
+  width: 222px;
+  height: 394px;
+  position: absolute;
+  top: 86px;
+  right: 39px;
+}
+body.default .android-mockup {
+  width: 300px;
+  position: relative;
+  margin: auto;
+  margin-bottom: 20px;
+}
+body.default .android-mockup .glare {
+  width: 243px;
+  position: absolute;
+  top: 47px;
+  left: 26px;
+}
+body.default .android-mockup .screen {
+  width: 243px;
+  height: 433px;
+  position: absolute;
+  top: 47px;
+  left: 26px;
+}
+body.default .share-buttons {
+  margin-top: 35px;
+}
+body.default .share-buttons .btn {
+  margin-right: 7px;
+  margin-bottom: 7px;
+  font-size: 15px;
+  padding: 7px 14px;
+  color: #fff;
+}
+body.default .share-buttons .btn:hover {
+  color: #fff;
+}
+body.default .share-buttons .btn.twitter {
+  background: #00aced;
+}
+body.default .share-buttons .btn.twitter:hover {
+  background: #0199D3;
+}
+body.default .share-buttons .btn.facebook {
+  background: #3B5998;
+}
+body.default .share-buttons .btn.facebook:hover {
+  background: #2F477A;
+}
+body.default .share-buttons i {
+  margin-right: 10px;
+  margin-top: 4px;
+  font-size: 18px;
+}
+body.default footer {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+body.default footer .container {
+  border-top: 1px solid rgba(0, 0, 0, 0.4);
+  padding: 10px;
+}
+body.default footer .copyright {
+  float: left;
+}
+body.default footer .credits {
+  float: right;
+  font-size: 12px;
+}

@@ -1,0 +1,69 @@
+.colorme {color:#1f27ff;}
+
+.nav-bar > li:hover, .nav-bar > li a:hover  { color: #1f27ff;}
+
+.nav-bar > li.active > a { }
+
+ul.flyout li a:hover, .nav-bar li ul li a:hover {color:#1f27ff;}
+
+.flyout {border-top:2px solid #1f27ff;}
+
+.sectiontitle {border-left: 4px solid #1f27ff;}
+
+::-moz-selection{background:#1f27ff;color:#fff;}
+
+::selection{background:#1f27ff;color:#fff;}
+
+.ca-menu li:hover .ca-main {color: #1f27ff;}
+
+.topborder { border-top:4px solid #1f27ff;}
+
+.readmore {background:#1f27ff;}
+
+ #subheader {background: #1f27ff;border-top: 1px solid #1f27ff; color: #eee;}
+
+ #subheader a {color: #eee;}
+
+ #subheader a:hover {color: #fff;}
+
+ .readmore {background:#1f27ff;}
+
+ #testimonials blockquote cite {color:#1f27ff;}
+
+ .tags {background:#1f27ff;}
+
+ ul.pagination li.current a {background: #1f27ff;}
+
+.saymore {color:#1f27ff;}
+
+.submit {background:#1f27ff;} 
+
+dl.tabs dd.active { border-bottom: 3px solid #1f27ff;}
+
+ul.accordion > li.active {border-top: 3px solid #1f27ff;}
+
+div.alert-box.default { background-color: #1f27ff;}
+
+.slide {	margin: 0;	padding: 0;	border-top: solid 4px #1f27ff;}
+
+.btn-slide {	background:#1f27ff url(../../images/plus.png) no-repeat;}
+
+.btn-slide.active { background: #1f27ff url(../../images/minus.png) no-repeat;}
+
+#footer {border-top:#1f27ff 4px solid;}
+
+.back-top a:hover{background-color: #1f27ff;}
+
+.sf-shadow ul {border-top:2px solid #1f27ff;}
+
+.panel {border-left:4px solid #1f27ff;}
+
+.colorbackground {background:#1f27ff;}
+
+a.projectdetail { background: #1f27ff;opacity:0.8;}
+
+a.projectdetail:hover { background: #1f27ff;opacity:1.0;}
+
+#testimonials {border-left: solid 6px #1f27ff;}
+
+.ei-title h2{background:#1f27ff;} 

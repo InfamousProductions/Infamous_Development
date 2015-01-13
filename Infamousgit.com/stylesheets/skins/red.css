@@ -1,0 +1,69 @@
+.colorme {color:#a8130d;}
+
+.nav-bar > li:hover, .nav-bar > li a:hover  { color: #a8130d;}
+
+.nav-bar > li.active > a { }
+
+ul.flyout li a:hover, .nav-bar li ul li a:hover {color:#a8130d;}
+
+.flyout {border-top:2px solid #a8130d;}
+
+.sectiontitle {border-left: 4px solid #a8130d;}
+
+::-moz-selection{background:#a8130d;color:#fff;}
+
+::selection{background:#a8130d;color:#fff;}
+
+.ca-menu li:hover .ca-main {color: #a8130d;}
+
+.topborder { border-top:4px solid #a8130d;}
+
+.readmore {background:#a8130d;}
+
+ #subheader {background: #a8130d;border-top: 1px solid #a8130d; color: #eee;}
+
+ #subheader a {color: #eee;}
+
+ #subheader a:hover {color: #fff;}
+
+ .readmore {background:#a8130d;}
+
+ #testimonials blockquote cite {color:#a8130d;}
+
+ .tags {background:#333;}
+
+ ul.pagination li.current a {background: #a8130d;}
+
+.saymore {color:#a8130d;}
+
+.submit {background:#a8130d;} 
+
+dl.tabs dd.active { border-bottom: 3px solid #a8130d;}
+
+ul.accordion > li.active {border-top: 3px solid #a8130d;}
+
+div.alert-box.default { background-color: #a8130d;}
+
+.slide {	margin: 0;	padding: 0;	border-top: solid 4px #a8130d;}
+
+.btn-slide {	background:#a8130d url(../../images/plus.png) no-repeat;}
+
+.btn-slide.active { background: #a8130d url(../../images/minus.png) no-repeat;}
+
+#footer {border-top:#a8130d 4px solid;}
+
+.back-top a:hover{background-color: #a8130d;}
+
+.sf-shadow ul {border-top:2px solid #a8130d;}
+
+.panel {border-left:4px solid #a8130d;}
+
+.colorbackground {background:#a8130d;}
+
+a.projectdetail { background: #a8130d;opacity:0.8;}
+
+a.projectdetail:hover { background: #a8130d;opacity:1.0;}
+
+#testimonials {border-left: solid 6px #a8130d;}
+
+.ei-title h2{background:#a8130d;}
