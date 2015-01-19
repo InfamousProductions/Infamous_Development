@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!--
-** Copyright 2013, the1dynasty
+** Copyright 2014 Jamison904
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -16,14 +16,13 @@
 ** limitations under the License.
 -->
 
-<!-- Lines 35, 57, 98 need to be changed. Everything else can stay the same -->
 
 <resources>
     
 	<string name="package_name">com.infamous.site</string>
 	<string name="email_address">james.jamison85@gmail.com</string>
 	<string name="market_rate">market://details?id=com.infamous.site</string>
-	<string name="app_market">market://details?id=app.the1dynasty.oss</string>
+	<string name="app_market">market://details?id=com.infamous.site</string>
 	
 	<string name="back_exit">Please click BACK again to exit</string>
     
@@ -84,7 +83,7 @@
 	<string name="title_community">G+ Community</string>
 	<string name="title_gplus">My Google+</string>
 	<string name="title_request">Infamous Blog</string>
-	<string name="title_black">Infamous Productions</string>
+	<string name="title_black">Tools and extras</string>
 	<string name="title_icons">Apply Icons</string>
 	
 	
@@ -106,6 +105,8 @@
 	<string name="twitterme">Follow On Twitter</string>
 	<string name="wall_picker">Wallpaper Picker</string>
 	<string name="dynasty_app">the1dynasty OSS App</string>
+	<string name="extras">Extras</string>
+	<string name="tools">Tools</string>
 	
 		<!-- More OverFlow Stuff -->
 	<string name="icon_share">Share</string>
@@ -180,4 +181,54 @@
 	<string name="desc_donate">Consider donating to help with the large server bill.</string>
 	<string name="desc_store">Checkout my other apps on the playstore!</string>
 	
+	<!-- Tools Titles -->
+	<string name="title_one">System Log</string>
+	<string name="title_two">Reboot menu</string>
+	<string name="title_three"></string>
+	<string name="title_four"></string>
+	<string name="title_five"></string>
+	<string name="title_six"></string>
+	<string name="title_tools">Tools</string>
+	<!-- desc tools -->
+	<string name="desc_one">Pull logs and send them to the developers</string>
+	<string name="desc_two">Reboot recovery, hot reboot, power off</string>
+	<string name="desc_three"></string>
+	<string name="desc_four"></string>
+	<string name="desc_five"></string>
+	<string name="desc_six"></string>
+	<string name="desc_tools">A collection of useful root tools.</string>
+	<!-- extras -->
+	<string name="title_downloads">Downloads</string>
+	<string name="desc_downloads">One stop for all download links and extras</string>
+	<string name="title_pro">Infamous Productions</string>
+	<string name="desc_pro">Official Infamous Application support site with built in forum.</string>
+	
+	<!-- reboot strings -->
+
+    <string name="action_settings">Settings</string>
+	
+    <string name="really_shutdown">Really Shutdown?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+    <string name="not_rooted">Your phone needs to be rooted and this app needs to be allowed to run a superuser command.</string>
+    <string name="what">What?</string>
+    <string name="rooting_url">http://en.wikipedia.org/wiki/Rooting_(Android_OS)</string>
+
+
+	<item type="id" name="button"> Button String </item>
+	<string name="version"></string>
+	<string name="website_first">http://infamousdevelopment.com</string>
+	<string name="visit_website">Visit Website</string>
+
+	<string name="force_shutdown">Shutdown</string>
+	<string name="force_reboot">Reboot</string>
+	<string name="hot_boot">Hot Boot</string>
+	<string name="force_reboot_recovery">Reboot Recovery</string>
+	<string name="really_force_reboot_recovery">Sure to Reboot Recovery?</string>
+
+	<string name="really_reboot">Sure to Reboot?</string>
+	<string name="really_hot_boot">Sure to Hot Boot?</string>
+
+
 </resources>

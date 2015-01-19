@@ -86,6 +86,17 @@
 	<!-- Background (vertical) -->
 	<!-- Background (horizontal) -->
 	<!-- Font color -->
+	
+	
+	<RuningDock home_memory_bg="appfunc_memory_bg" home_memory_process_low="appfunc_memory_low" home_memory_process_middle="appfunc_memory_middle" home_memory_process_high="appfunc_memory_high" home_clean_normal="appfunc_home_runing_clear" home_clean_light="appfunc_home_runing_clear_ligh" home_lock_list_normal="appfunc_home_runing_lock_list" home_lock_list_light="appfunc_home_runing_lock_list_light" home_line_img_v="appfunc_home_deliver_line_v" home_line_img_h="appfunc_home_deliver_line_h" home_running_text_color="#f9fdfe"/>
+	
+	<AllAppDock search_unselected="appfunc_home_search" search_selected="appfunc_home_search_light" menu_unselected="appfunc_home_menu" menu_selected="appfunc_home_menu_light" home_myapp="appfunc_home_my_apps" home_myapp_light="appfunc_home_my_apps_light"/>
+	
+	<RecentDock home_recent_clear="appfunc_home_clear" home_recent_clear_selected="appfunc_home_clear_light" home_recent_nodata_Bg="appfunc_recent_nodata_bg" home_recent_nodata_text_color="#FFFFFF"/>
+	
+	<AllAppMenu menu_bg_v="appfunc_menu_bg_v" menu_bg_h="appfunc_menu_bg_h" menu_divider_v="appfunc_menu_line" menu_divider_h="appfunc_menu_line" menu_text_color="#FFFFFF" menu_item_selected="appfunc_menu_item_selector"/> 
+	
+	
 	<MoveToDesk bg_v_image="appfunc_movetodesk" bg_h_image="none" bg_way_of_drawing="1"
 		bg_color="#FFFFFFFF">
 		<!-- <Bg_v way_of_drawing=""></Bg_v> <Bg_h way_of_drawing=""></Bg_h> <Bg_color></Bg_color> -->

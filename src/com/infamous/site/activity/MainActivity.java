@@ -1,5 +1,5 @@
 /*
- * Copyright 2013 the1dynasty
+ * Copyright 2014 Jamison904
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -41,12 +41,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 import android.support.v4.widget.DrawerLayout;
+import eu.chainfire.libsuperuser.Shell;
+
 
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
 import com.google.android.gms.ads.*;
+import java.io.*;
 
 
 /** 
@@ -110,6 +113,14 @@ public class MainActivity extends SherlockFragmentActivity {
 	    	  editor.putInt("Build Number", currentVersion);
 	    	  editor.commit();
 	    	}
+				
+		try
+		{
+			Process p = Runtime.getRuntime().exec("su");
+		}
+		catch (IOException e)
+		{}
+
 	  }
 	
 	public Dialog getChangelog()

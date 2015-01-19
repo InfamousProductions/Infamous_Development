@@ -38,6 +38,7 @@
 		<item>wall_33</item>  
 		<item>wall_34</item>
 		<item>wall_35</item>
+		<item>wall_36</item>
 	</string-array>
 
     <!-- Provide a list of wallpaers -->
@@ -77,6 +78,7 @@
 		<item>wall_33</item>  
 		<item>wall_34</item>
 		<item>wall_35</item>
+		<item>wall_36</item>
     </string-array>
     
     <string-array name="extra_wallpapers">
@@ -90,5 +92,12 @@
         <item>dock_0003</item>
         <item>dock_0004</item>
     </string-array>
-    
+    <!-- Array for the grep spinner -->
+    <string-array name="grep_options">
+        <item>Main Log</item>
+        <item>Kernel Log</item>
+        <item>Last Kernel Log</item>
+        <item>Modem Log</item>
+        <item>All Logs</item>
+    </string-array>
 </resources>

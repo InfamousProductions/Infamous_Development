@@ -26,7 +26,7 @@
 	<string name="changelog_2">Version 1.5</string>
 	<string name="changelog_3">Version 1.6</string>
 	<string name="changelog_4">Version 1.7</string>
-	<string name="changelog_5">Version 4.7.5</string>
+	<string name="changelog_5">Version 2.0</string>
 	<string name="changelog_6">Version 2.1.2</string>
 	<string name="changelog_7">Version 2.2.0</string>
 	<string name="changelog_8">Version 2.2.2</string>
@@ -73,12 +73,12 @@
 	
 	<!-- Changelog 5 -->						
 		<string name="cl_list_5">
-		    &#8226; Added Google Keep
-			\n&#8226; Tweaked Gmail to clean it up
-			\n&#8226; Working on a bunch more that arent ready yet
-			\n&#8226; Added link to Team Blacked Out updater app. Thank you guys for all you do!
-			\n&#8226; cleaning up app and UI
-			\n&#8226; Added back sounds and notifications per request
+		    &#8226; Major overhaul
+			\n&#8226; Removed icons for now
+			\n&#8226; Warning: added Root permissions
+			\n&#8226; Added root tools!
+			\n&#8226; Added Infamous Downloads. Where you can find all our downloads and extras
+			\n&#8226; Added extras and tools section.
 		</string>
 	
 	<!-- Changelog 6 -->						

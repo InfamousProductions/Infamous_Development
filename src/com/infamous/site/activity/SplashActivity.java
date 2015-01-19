@@ -7,6 +7,8 @@ import android.os.Handler;
 import android.view.Window;
 import com.infamous.site.R;
 
+import java.io.*;
+
 public class SplashActivity extends Activity { 
       
      private final int SPLASH_DISPLAY_LENGHT = 4000; 
@@ -16,7 +18,9 @@ public class SplashActivity extends Activity {
      @Override 
      public void onCreate(Bundle icicle) { 
           super.onCreate(icicle); 
-          
+		  
+		 
+
           //no title bar
           requestWindowFeature(Window.FEATURE_NO_TITLE);
           //getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);

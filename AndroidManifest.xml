@@ -19,15 +19,19 @@
 <manifest 
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	package="com.infamous.site"
-	android:versionCode="8"
-	android:versionName="1.7"
+	android:versionCode="10"
+	android:versionName="2.0"
 	android:installLocation="auto">
     <!-- android:installLocation is set to "auto" 
     change to "internalOnly" if you want it installed to the internal memory -->
 
-    <!-- Permission required for setting the wallpaper -->
+    <!-- Permission required -->
     <uses-permission android:name="android.permission.SET_WALLPAPER" />
     <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
+    
 
 	<!-- Used to request banner and interstitial ads. -->
 	<uses-permission android:name="android.permission.INTERNET" />
@@ -70,6 +74,31 @@
 		<activity
             android:name="com.infamous.site.activity.MainActivity"
             android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+		<activity
+            android:name="com.infamous.site.activity.InfamousActivity"
+            android:label="@string/extras" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+		<activity
+            android:name="com.infamous.site.activity.InfamoustwoActivity"
+            android:label="@string/tools" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+		<activity
+            android:name="com.infamous.site.RibuterActivity"
+            android:label="@string/app_name" 
+            android:configChanges="orientation|keyboardHidden|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -200,6 +229,16 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
 		</activity>
+		<activity
+            android:name="com.infamous.site.LogActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" >
+                </action>
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
 
 		<!-- android:authorities NEEDS to be changed manually for each new pack
     	Failure to change name, will result in installation errors -->    

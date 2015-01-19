@@ -6,6 +6,7 @@ import java.util.List;
 
 import view.ScrollGridView;
 import com.infamous.site.R;
+import com.infamous.site.*;
 import com.infamous.site.activity.AboutThemeActivity;
 import com.infamous.site.activity.ApplyLauncherMain;
 import com.infamous.site.activity.RequestActivity;
@@ -40,9 +41,7 @@ public class MainFragment extends SherlockFragment{
 	public static final int REQUEST = 2;
 	public static final int THEMEINFO = 3;
 	public static final int BLACK = 4;
-	public static final int STORE = 5;
-	public static final int DONATE = 6;
-	public static final int ICONS = 7;
+	
 	
 
 	// This is the background layout that gets inflated behind the list view
@@ -86,12 +85,6 @@ public class MainFragment extends SherlockFragment{
 					getResources().getString (R.string.desc_info), 3));
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_black), 
 					getResources().getString (R.string.desc_black), 4));		
-			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_store), 
-					getResources().getString (R.string.desc_store), 5));
-			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_donate), 
-					getResources().getString (R.string.desc_donate), 6));
-			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_icons), 
-					getResources().getString (R.string.desc_icons), 7));
 			
 			
 		} else {
@@ -106,12 +99,6 @@ public class MainFragment extends SherlockFragment{
 					getResources().getString (R.string.desc_info), 3));
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_black), 
 					getResources().getString (R.string.desc_black), 4));
-			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_store), 
-					getResources().getString (R.string.desc_store), 5));
-			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_donate), 
-					getResources().getString (R.string.desc_donate), 6));
-			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_icons), 
-					getResources().getString (R.string.desc_icons), 7));
 			
 			
 			
@@ -151,24 +138,10 @@ public class MainFragment extends SherlockFragment{
 						startActivity(request);
 			        	break;
 					case BLACK:
-						Intent black = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
-						("http://infamousgit.com"));
+						Intent black = new Intent(getSherlockActivity(), InfamousActivity.class);
 						startActivity(black);
 						break;
-					case STORE:
-						Intent store = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
-						("http://goo.gl/zsjREb"));
-						startActivity(store);
-						break;
-					case DONATE:
-						Intent donate = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
-						("http://goo.gl/Gw2Lf9"));
-						startActivity(donate);
-						break;
-					case ICONS:
-						Intent launcher2 = new Intent(getSherlockActivity(), ApplyLauncherMain.class);
-						startActivity(launcher2);
-						break;
+					
 					
 						}	
 				} else {	// For PHONES
@@ -192,26 +165,10 @@ public class MainFragment extends SherlockFragment{
 						startActivity(aboutTheme);
 		        		break;
 					case BLACK:
-						Intent black = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
-						("http://infamousgit.com"));
+						Intent black = new Intent(getSherlockActivity(), InfamousActivity.class);
 						startActivity(black);
 						break;
-					case STORE:
-						Intent store = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
-						("http://goo.gl/zsjREb"));
-						startActivity(store);
-						break;
-					case DONATE:
-						Intent donate = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
-						("http://goo.gl/Gw2Lf9"));
-						startActivity(donate);
-						break;
-					case ICONS:
-						Intent launcher2 = new Intent(getSherlockActivity(), ApplyLauncherMain.class);
-						startActivity(launcher2);
-						break;
-					
-		        		
+						        		
 					}
 				}
 				}	
