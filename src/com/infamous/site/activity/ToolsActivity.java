@@ -78,7 +78,7 @@ public class ToolsActivity extends SherlockFragmentActivity {
 		getSupportActionBar().setDisplayShowTitleEnabled(false); // Set this to false to hide AB Title
 		
 		getSupportFragmentManager().beginTransaction()
-		.replace(R.id.container, new InfamoustwoFragment())
+		.replace(R.id.container, new ToolsFragment())
 		.commit();
 		
 		// The "loadAdOnCreate" and "testDevices" XML attributes no longer available.

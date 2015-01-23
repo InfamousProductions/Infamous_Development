@@ -78,7 +78,7 @@ public class ExtrasActivity extends SherlockFragmentActivity {
 		getSupportActionBar().setDisplayShowTitleEnabled(false); // Set this to false to hide AB Title
 		
 		getSupportFragmentManager().beginTransaction()
-		.replace(R.id.container, new InfamousFragment())
+		.replace(R.id.container, new ExtrasFragment())
 		.commit();
 		
 		// The "loadAdOnCreate" and "testDevices" XML attributes no longer available.

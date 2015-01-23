@@ -11,10 +11,9 @@ import com.infamous.site.activity.AboutThemeActivity;
 import com.infamous.site.activity.ApplyLauncherMain;
 import com.infamous.site.activity.RequestActivity;
 import com.infamous.site.activity.Wallpaper;
-import com.infamous.site.activity.*;
 import com.infamous.site.adapter.*;
-import com.infamous.site.adapter.ExtrasAdapter;
-import com.infamous.site.adapter.ExtrasAdapter.AdapterItem;
+import com.infamous.site.adapter.ToolsAdapter;
+import com.infamous.site.adapter.ToolsAdapter.AdapterItem;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -33,7 +32,7 @@ import android.net.*;
  ** Just be sure you're in the general area
  **/
 
-public class InfamousFragment extends SherlockFragment{
+public class ToolsFragment extends SherlockFragment{
 	
 	ScrollGridView gridView;
 	final List<AdapterItem> listOfStuff = new ArrayList<AdapterItem>();
@@ -47,7 +46,7 @@ public class InfamousFragment extends SherlockFragment{
 
 	// This is the background layout that gets inflated behind the list view
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-		return inflater.inflate(R.layout.gridview_behind2, null);
+		return inflater.inflate(R.layout.gridview_behind3, null);
 	}
 	
 	// Starts when the MainFragment is launched
@@ -76,33 +75,33 @@ public class InfamousFragment extends SherlockFragment{
 		boolean tabletSize = getResources().getBoolean(R.bool.isTablet);
 		if (tabletSize) {
 			gridView = (ScrollGridView)getView().findViewById(R.id.grid);
-			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_icons), 
-					getResources().getString (R.string.desc_icons), 0));
-			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_downloads), 
-					getResources().getString (R.string.desc_downloads), 1));
-			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_pro), 
-					getResources().getString (R.string.desc_pro), 2));
-			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_five), 
-					getResources().getString (R.string.desc_four), 3));
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_six), 
+					getResources().getString (R.string.desc_six), 0));
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_two), 
+					getResources().getString (R.string.desc_two), 1));
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_three), 
+					getResources().getString (R.string.desc_three), 2));
 			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_four), 
+					getResources().getString (R.string.desc_four), 3));
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_five), 
 					getResources().getString (R.string.desc_five), 4));
-			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_tools), 
-					getResources().getString (R.string.desc_tools), 5));
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_one), 
+					getResources().getString (R.string.desc_one), 5));
 			
 		} else {
 			gridView = (ScrollGridView)getView().findViewById(R.id.grid);
-			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_icons), 
-					getResources().getString (R.string.desc_icons), 0));
-			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_downloads), 
-					getResources().getString (R.string.desc_downloads), 1));
-			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_pro), 
-					getResources().getString (R.string.desc_pro), 2));
-			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_store), 
-					getResources().getString (R.string.desc_store), 3));
-			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_donate), 
-					getResources().getString (R.string.desc_donate), 4));
-			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_tools), 
-					getResources().getString (R.string.desc_tools), 5)); 
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_one), 
+					getResources().getString (R.string.desc_one), 0));
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_two), 
+					getResources().getString (R.string.desc_two), 1));
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_three), 
+					getResources().getString (R.string.desc_three), 2));
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_four), 
+					getResources().getString (R.string.desc_four), 3));
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_five), 
+					getResources().getString (R.string.desc_five), 4));
+			listOfStuff.add(new AdapterItem(getResources().getString (R.string.title_six), 
+					getResources().getString (R.string.desc_six), 5)); 
 			
 		}
 
@@ -111,7 +110,7 @@ public class InfamousFragment extends SherlockFragment{
 		 ** section. Be sure to remove both parts to remove it from phones and tablets. Failure to remove both
 		 ** parts will result in the app functioning differently on phones and tablets.
 		 **/
-			ExtrasAdapter adapter = new ExtrasAdapter(getActivity(), listOfStuff);
+			ToolsAdapter adapter = new ToolsAdapter(getActivity(), listOfStuff);
 	
 			gridView.setAdapter(adapter);
 			gridView.setExpanded(true);
@@ -126,48 +125,50 @@ public class InfamousFragment extends SherlockFragment{
 						
 						switch (position) {
 							case ONE:
-								Intent launcher2 = new Intent(getSherlockActivity(), ApplyLauncherMain.class);
-								startActivity(launcher2);
-								break;
-							case TWO:
-								Intent two = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
-								("http://infamousdevelopment.com/Downloads/"));
-								startActivity(two);
-								break;
+								Intent one = new Intent(getSherlockActivity(),LogActivity.class);
+								startActivity(one);
+								break;						
 							case THREE:
 								Intent three = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
-								("http://infamousgit.com/"));
+								("http://infamousdevelopment.com"));
 								startActivity(three);
+								break;
+								/*
+							case TWO:
+								Intent two = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
+								("http://infamousdevelopment.com/"));
+								startActivity(two);
 								break;
 							case FOUR:
 								Intent four = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
 								("http://goo.gl/zsjREb"));
 								startActivity(four);
 								break;
-							case FIVE:
+							case SIX:
 								Intent five = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
 								("http://goo.gl/Gw2Lf9"));
-								startActivity(five);
-								break;
-							case SIX:
-								Intent six = new Intent(getSherlockActivity(), ToolsActivity.class);
 								startActivity(six);
 								break;
+							case FOVE:
+								Intent six = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
+								("http://goo.gl/y2wnal"));
+								startActivity(five);
+								break; */
 						}	
 				} else {	// For PHONES
 					switch (position) {
 						case ONE:
-							Intent launcher2 = new Intent(getSherlockActivity(), ApplyLauncherMain.class);
-							startActivity(launcher2);
+							Intent one = new Intent(getSherlockActivity(),LogActivity.class);
+							startActivity(one);
 							break;
 						case TWO:
-							Intent two = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
-							("http://infamousdevelopment.com/Downloads/"));
+							Intent two = new Intent(getSherlockActivity(),RibuterActivity.class);						
 							startActivity(two);
 							break;
+							/*
 						case THREE:
 							Intent three = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
-							("http://infamousgit.com"));
+							("http://infamousdevelopment.com/social"));
 							startActivity(three);
 							break;
 						case FOUR:
@@ -181,9 +182,10 @@ public class InfamousFragment extends SherlockFragment{
 							startActivity(five);
 							break;
 						case SIX:
-							Intent six = new Intent(getSherlockActivity(), ToolsActivity.class);
+							Intent six = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
+							("http://goo.gl/y2wnal"));
 							startActivity(six);
-							break;
+							break; */
 		        		
 					}
 				}
