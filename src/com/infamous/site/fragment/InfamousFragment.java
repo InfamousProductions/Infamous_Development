@@ -13,8 +13,8 @@ import com.infamous.site.activity.RequestActivity;
 import com.infamous.site.activity.Wallpaper;
 import com.infamous.site.activity.*;
 import com.infamous.site.adapter.*;
-import com.infamous.site.adapter.InfamousAdapter;
-import com.infamous.site.adapter.InfamousAdapter.AdapterItem;
+import com.infamous.site.adapter.ExtrasAdapter;
+import com.infamous.site.adapter.ExtrasAdapter.AdapterItem;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -111,7 +111,7 @@ public class InfamousFragment extends SherlockFragment{
 		 ** section. Be sure to remove both parts to remove it from phones and tablets. Failure to remove both
 		 ** parts will result in the app functioning differently on phones and tablets.
 		 **/
-			InfamousAdapter adapter = new InfamousAdapter(getActivity(), listOfStuff);
+			ExtrasAdapter adapter = new ExtrasAdapter(getActivity(), listOfStuff);
 	
 			gridView.setAdapter(adapter);
 			gridView.setExpanded(true);
@@ -150,7 +150,7 @@ public class InfamousFragment extends SherlockFragment{
 								startActivity(five);
 								break;
 							case SIX:
-								Intent six = new Intent(getSherlockActivity(), InfamoustwoActivity.class);
+								Intent six = new Intent(getSherlockActivity(), ToolsActivity.class);
 								startActivity(six);
 								break;
 						}	
@@ -181,7 +181,7 @@ public class InfamousFragment extends SherlockFragment{
 							startActivity(five);
 							break;
 						case SIX:
-							Intent six = new Intent(getSherlockActivity(), InfamoustwoActivity.class);
+							Intent six = new Intent(getSherlockActivity(), ToolsActivity.class);
 							startActivity(six);
 							break;
 		        		

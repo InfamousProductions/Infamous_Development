@@ -138,7 +138,7 @@ public class MainFragment extends SherlockFragment{
 						startActivity(request);
 			        	break;
 					case BLACK:
-						Intent black = new Intent(getSherlockActivity(), InfamousActivity.class);
+						Intent black = new Intent(getSherlockActivity(), ExtrasActivity.class);
 						startActivity(black);
 						break;
 					
@@ -165,7 +165,7 @@ public class MainFragment extends SherlockFragment{
 						startActivity(aboutTheme);
 		        		break;
 					case BLACK:
-						Intent black = new Intent(getSherlockActivity(), InfamousActivity.class);
+						Intent black = new Intent(getSherlockActivity(), ExtrasActivity.class);
 						startActivity(black);
 						break;
 						        		

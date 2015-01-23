@@ -10,6 +10,6 @@
 	android:dividerHeight="0dp"
 	android:listSelector="@color/transparent"
 	android:cacheColorHint="@color/transparent"
-	tools:context="com.infamous.site.activity.InfamousActivity"
+	tools:context="com.infamous.site.activity.ExtrasActivity"
 	android:background="#000000"/>
 

@@ -80,7 +80,7 @@
             </intent-filter>
         </activity>
 		<activity
-            android:name="com.infamous.site.activity.InfamousActivity"
+            android:name="com.infamous.site.activity.ExtrasActivity"
             android:label="@string/extras" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -88,7 +88,7 @@
             </intent-filter>
         </activity>
 		<activity
-            android:name="com.infamous.site.activity.InfamoustwoActivity"
+            android:name="com.infamous.site.activity.ToolsActivity"
             android:label="@string/tools" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

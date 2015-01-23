@@ -12,8 +12,8 @@ import com.infamous.site.activity.ApplyLauncherMain;
 import com.infamous.site.activity.RequestActivity;
 import com.infamous.site.activity.Wallpaper;
 import com.infamous.site.adapter.*;
-import com.infamous.site.adapter.InfamoustwoAdapter;
-import com.infamous.site.adapter.InfamoustwoAdapter.AdapterItem;
+import com.infamous.site.adapter.ToolsAdapter;
+import com.infamous.site.adapter.ToolsAdapter.AdapterItem;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -110,7 +110,7 @@ public class InfamoustwoFragment extends SherlockFragment{
 		 ** section. Be sure to remove both parts to remove it from phones and tablets. Failure to remove both
 		 ** parts will result in the app functioning differently on phones and tablets.
 		 **/
-			InfamoustwoAdapter adapter = new InfamoustwoAdapter(getActivity(), listOfStuff);
+			ToolsAdapter adapter = new ToolsAdapter(getActivity(), listOfStuff);
 	
 			gridView.setAdapter(adapter);
 			gridView.setExpanded(true);

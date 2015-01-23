@@ -55,7 +55,7 @@ import com.infamous.site.fragment.*;
  **/
 
 
-public class InfamoustwoActivity extends SherlockFragmentActivity {
+public class ExtrasActivity extends SherlockFragmentActivity {
 	
 	private SharedPreferences prefs;
 	private GlassActionBarHelper helper;
@@ -71,14 +71,14 @@ public class InfamoustwoActivity extends SherlockFragmentActivity {
 		prefs = getSharedPreferences(getResources().getString(R.string.theme_name), 0);
 		
 
-		helper = new GlassActionBarHelper().contentLayout(R.layout.gridview_main3);
+		helper = new GlassActionBarHelper().contentLayout(R.layout.gridview_main2);
 		setContentView(helper.createView(this));
 		
 		getSupportActionBar().setDisplayShowHomeEnabled(false); // Set this to false to hide AB Icon
 		getSupportActionBar().setDisplayShowTitleEnabled(false); // Set this to false to hide AB Title
 		
 		getSupportFragmentManager().beginTransaction()
-		.replace(R.id.container, new InfamoustwoFragment())
+		.replace(R.id.container, new InfamousFragment())
 		.commit();
 		
 		// The "loadAdOnCreate" and "testDevices" XML attributes no longer available.

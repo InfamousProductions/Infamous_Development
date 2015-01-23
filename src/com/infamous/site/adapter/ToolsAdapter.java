@@ -14,7 +14,7 @@ import java.util.List;
 import com.infamous.site.R;
 
 
-public class InfamousAdapter extends BaseAdapter{
+public class ToolsAdapter extends BaseAdapter{
 	
 	
 	public static final int FORUM = 0;
@@ -29,7 +29,7 @@ public class InfamousAdapter extends BaseAdapter{
 	private Context context;
 	private List<AdapterItem> gridItem;
 
-	public InfamousAdapter(Context context, List<AdapterItem> gridItem) {
+	public ToolsAdapter(Context context, List<AdapterItem> gridItem) {
 		this.gridItem = gridItem;
 		this.context = context;
 	}
@@ -80,32 +80,32 @@ public class InfamousAdapter extends BaseAdapter{
 			case FORUM:
 				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
 				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
-				holder.icon_Image.setImageResource(R.drawable.icon_forum);
+				holder.icon_Image.setImageResource(R.drawable.icon_hold);
 				break;
 			case BLOG:
 				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
 				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
-				holder.icon_Image.setImageResource(R.drawable.icon_blog);
+				holder.icon_Image.setImageResource(R.drawable.icon_hold);
 				break;
 			case SOCIAL:
 				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
 				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
-				holder.icon_Image.setImageResource(R.drawable.icon_social);
+				holder.icon_Image.setImageResource(R.drawable.icon_hold);
 				break;
 			case STORE:
 				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
 				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
-				holder.icon_Image.setImageResource(R.drawable.icon_play);
+				holder.icon_Image.setImageResource(R.drawable.icon_hold);
 				break;
 			case DONATE:
 				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
 				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
-				holder.icon_Image.setImageResource(R.drawable.icon_paypal);
+				holder.icon_Image.setImageResource(R.drawable.icon_hold);
 				break;
 			case BLACK:
 				holder.title.setTextColor(context.getResources().getColor(R.color.list_title_color));
 				holder.text.setTextColor(context.getResources().getColor(R.color.list_desc_color));
-				holder.icon_Image.setImageResource(R.drawable.icon_tools);
+				holder.icon_Image.setImageResource(R.drawable.icon_hold);
 				break;
 			
 			}
